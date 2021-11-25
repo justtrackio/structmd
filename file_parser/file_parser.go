@@ -4,8 +4,8 @@ import (
 	"go/ast"
 	"strings"
 
+	"github.com/justtrackio/structmd/domain"
 	"github.com/thoas/go-funk"
-	"github.com/justtrackio/structmd/cmd/config-structs-as-markdown/domain"
 )
 
 func ParseStructDefinitions(astFile *ast.File, requiredStructs []string) []domain.StructDefinition {

@@ -7,8 +7,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/justtrackio/structmd/cmd/config-structs-as-markdown/file_parser"
-	"github.com/justtrackio/structmd/cmd/config-structs-as-markdown/markdown_generator"
+	"github.com/justtrackio/structmd/file_parser"
+	"github.com/justtrackio/structmd/markdown_generator"
 )
 
 const (

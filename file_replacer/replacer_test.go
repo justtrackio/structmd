@@ -4,9 +4,8 @@ import (
 	"io/ioutil"
 	"testing"
 
+	"github.com/justtrackio/structmd/file_replacer"
 	"github.com/stretchr/testify/assert"
-
-	"github.com/justtrackio/structmd/cmd/config-structs-as-markdown/file_replacer"
 )
 
 const (

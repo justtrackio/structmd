@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/justtrackio/structmd/cmd/config-structs-as-markdown/file_replacer"
+	"github.com/justtrackio/structmd/file_replacer"
 )
 
 const helpMessage = `

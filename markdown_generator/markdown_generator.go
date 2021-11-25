@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/justtrackio/structmd/cmd/config-structs-as-markdown/domain"
+	"github.com/justtrackio/structmd/domain"
 )
 
 func Generate(input ...domain.StructDefinition) string {

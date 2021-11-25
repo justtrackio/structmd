@@ -3,10 +3,9 @@ package markdown_generator_test
 import (
 	"testing"
 
+	"github.com/justtrackio/structmd/domain"
+	"github.com/justtrackio/structmd/markdown_generator"
 	"github.com/stretchr/testify/assert"
-
-	"github.com/justtrackio/structmd/cmd/config-structs-as-markdown/domain"
-	"github.com/justtrackio/structmd/cmd/config-structs-as-markdown/markdown_generator"
 )
 
 func TestGenerate(t *testing.T) {

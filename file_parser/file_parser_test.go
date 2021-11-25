@@ -5,9 +5,9 @@ import (
 	"go/token"
 	"testing"
 
+	"github.com/justtrackio/structmd/domain"
+	"github.com/justtrackio/structmd/file_parser"
 	"github.com/stretchr/testify/assert"
-	"github.com/justtrackio/structmd/cmd/config-structs-as-markdown/domain"
-	"github.com/justtrackio/structmd/cmd/config-structs-as-markdown/file_parser"
 )
 
 func TestParseStructDefinitions(t *testing.T) {
