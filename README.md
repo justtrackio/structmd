@@ -65,3 +65,4 @@ MySettingsStruct does smth.\nline 1\nline two
 
 #### Notes
 * the following godoc rule is being obeyed: if a struct or field has one or more lines of comments, the first comment beginning with the name of that struct/field is considered the beginning of its godoc comment
+* the source file in the `[structmd]:#` line needs to be relative to the location of the repo's base directory, not relative to the location of the .md file
