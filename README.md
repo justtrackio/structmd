@@ -6,7 +6,6 @@ structmd is a cmd line app which takes in markdown files and adds to them docume
 In your markdown file (i.e. README.md) you can add lines like the 2 lines below:
 
 `[structmd]:# (pkg/apiserver/cors.go MySettingsStruct MyOtherStruct)`
-
 `[structmd end]:#`
 
 Notice on the first line the `[structmd]:#` keyword followed by a single source code file `pkg/apiserver/cors.go` then a list of struct names. The second line is also mandatory, as it marks the end of this current `structmd` block.
