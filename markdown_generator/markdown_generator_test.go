@@ -23,7 +23,7 @@ func TestGenerate(t *testing.T) {
 	}
 
 	actual := markdown_generator.Generate(input)
-	expected := `##### Struct **MySettingsStruct**
+	expected := `**MySettingsStruct**
 
 MySettingsStruct does smth.\nline 1\nline two
 

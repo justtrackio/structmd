@@ -55,7 +55,7 @@ type MySettingsStruct struct {
 
 Our tool will produce the following output:
 
-##### Struct **MySettingsStruct**
+**MySettingsStruct**
 
 MySettingsStruct does smth.\nline 1\nline two
 

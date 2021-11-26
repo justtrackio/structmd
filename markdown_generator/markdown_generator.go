@@ -24,7 +24,7 @@ func Generate(input ...domain.StructDefinition) string {
 func generateStruct(input domain.StructDefinition) string {
 	var result strings.Builder
 
-	result.WriteString(fmt.Sprintf("##### Struct **%s**\n\n%s\n\n", input.Name, input.GodocComment))
+	result.WriteString(fmt.Sprintf("**%s**\n\n%s\n\n", input.Name, input.GodocComment))
 	result.WriteString("| field       | type     | default     | description     |\n")
 	result.WriteString("| :------------- | :----------: | :----------: | -----------: |\n")
 
