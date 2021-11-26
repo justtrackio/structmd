@@ -14,7 +14,7 @@ const (
 [structmd end]:#
 `
 	expectedContents = `[structmd]:# (test_struct.go MySettingsStruct MyOtherStruct)
-##### Struct **MySettingsStruct**
+**MySettingsStruct**
 
 MySettingsStruct does smth\nline 1\nline two
 
@@ -22,7 +22,7 @@ MySettingsStruct does smth\nline 1\nline two
 | :------------- | :----------: | :----------: | -----------: |
 | Port | string | 8080 | Port does smth else\nPort related comment |
 
-##### Struct **MyOtherStruct**
+**MyOtherStruct**
 
 MyOtherStruct does smth\nline one.\nline 2.
 
