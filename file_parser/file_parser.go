@@ -1,6 +1,7 @@
 package file_parser
 
 import (
+	"fmt"
 	"go/ast"
 	"strings"
 
@@ -85,8 +86,11 @@ func extractFields(fieldList []*ast.Field) []domain.StructField {
 					current.DefaultValue = extractDefaultValue(field.Tag.Value)
 				}
 
-				if ident, ok := field.Type.(*ast.Ident); ok {
-					current.Type = ident.Name
+				switch fieldType := field.Type.(type) {
+				case *ast.Ident:
+					current.Type = fieldType.Name
+				case *ast.SelectorExpr:
+					current.Type = fmt.Sprintf("%s.%s", fieldType.X.(*ast.Ident).Name, fieldType.Sel.Name)
 				}
 
 				result = append(result, current)
