@@ -10,10 +10,10 @@ import (
 
 const (
 	filename     = "README_TEST.md"
-	fileContents = `[structmd]:# (test_struct.go MySettingsStruct MyOtherStruct)
+	fileContents = `[structmd]:# (test_struct.go MySettingsStruct MyOtherStruct MyTimeStruct)
 [structmd end]:#
 `
-	expectedContents = `[structmd]:# (test_struct.go MySettingsStruct MyOtherStruct)
+	expectedContents = `[structmd]:# (test_struct.go MySettingsStruct MyOtherStruct MyTimeStruct)
 **MySettingsStruct**
 
 MySettingsStruct does smth\nline 1\nline two
@@ -29,6 +29,14 @@ MyOtherStruct does smth\nline one.\nline 2.
 | field       | type     | default     | description     |
 | :------------- | :----------: | :----------: | -----------: |
 | Port | string | 2222 | Port does smth 11.\nPort related comment 2. |
+
+**MyTimeStruct**
+
+
+
+| field       | type     | default     | description     |
+| :------------- | :----------: | :----------: | -----------: |
+| Read | time.Duration | 60s | Read timeout is the maximum duration for reading the entire request, including the body. |
 
 [structmd end]:#
 `
